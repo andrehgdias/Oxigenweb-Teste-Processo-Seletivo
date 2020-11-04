@@ -1,0 +1,352 @@
+@font-face {
+  font-family: "Heebo";
+  src: url("../fonts/Heebo/Heebo-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Myriad Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Regular"),
+    url("../fonts/myriad-pro/MYRIADPRO-REGULAR.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Bold"),
+    url("../fonts/myriad-pro/MYRIADPRO-BOLD.woff") format("woff");
+}
+
+* {
+  font-family: "Heebo", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2,
+h3 {
+  color: #2d2d2d;
+}
+
+p {
+  color: #757575;
+}
+
+.whatsapp {
+  z-index: 10;
+  width: 70px;
+  height: 70px;
+  background-color: #55c842;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  border-radius: 50%;
+  color: #fff;
+  transition: transform 0.3s;
+  line-height: 75px;
+  text-align: center;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp svg {
+  width: 50%;
+  height: 50%;
+  fill: #fff;
+  margin-top: -5px;
+}
+
+/* Navbar */
+.navbar-green {
+  background-color: #008437;
+  color: #fff;
+  font-size: 20px;
+}
+
+.navbar-green li > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-green li > a:hover {
+  opacity: 0.8;
+}
+
+.navbar-green .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.btn-outline-white,
+.btn-outline-green {
+  border-radius: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: 20px;
+}
+
+.btn-outline-green {
+  border: 1px solid #028441;
+  color: #028441;
+}
+
+.btn-outline-green:hover {
+  background-color: #028441;
+  color: #fff;
+}
+
+.btn-outline-white {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-outline-white:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Hero Section */
+#hero {
+  background: #fff url("../img/img11.png") no-repeat center;
+  background-size: cover;
+  min-height: 585px;
+  color: #fff;
+}
+
+#hero .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 585px;
+  text-align: center;
+  align-items: center;
+}
+
+.custom-breadcrumb {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0.75rem 0;
+  margin-bottom: 1rem;
+  list-style: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.custom-breadcrumb-item {
+  margin-left: 10px;
+}
+
+.custom-breadcrumb-item::before {
+  content: "|";
+  margin-right: 10px;
+}
+
+.custom-breadcrumb a {
+  color: #fff;
+}
+
+.banner-text {
+  font-size: 20px;
+}
+
+.banner-text h2 {
+  margin-top: 50px;
+  font-size: 50px;
+  letter-spacing: -1px;
+  line-height: 56px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Myriad Pro Bold";
+}
+
+.banner-text p {
+  color: #fff;
+}
+
+.btn-hero {
+  color: #f5812c;
+  width: 200px;
+}
+
+.btn-hero .svg-wrapper {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #f5812c;
+  border-radius: 50%;
+}
+
+.btn-hero:hover {
+  color: #b96021;
+}
+
+/* Sobre Section */
+#sobre,
+#app {
+  padding: 100px 0;
+}
+
+#sobre h2,
+#app h2 {
+  font-size: 25px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+#sobre p,
+#app p {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+figure {
+  border-radius: 15px;
+  position: relative;
+}
+
+figure img {
+  border-radius: 15px;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: #fff;
+}
+
+#sobre figure {
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Na mídia */
+#na-midia .title-wrapper {
+  overflow: visible;
+  height: 85px;
+  background: #fff url("../img/detalhe.png") no-repeat right bottom;
+  margin-bottom: 35px;
+}
+
+#na-midia h2 {
+  font-size: 45px;
+  line-height: 53px;
+  font-weight: bold;
+  font-family: "Myriad Pro Bold";
+}
+
+.custom-card figcaption {
+  padding: 0 10px;
+  border-radius: 14px;
+  background-color: #00833f;
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.custom-card h3 {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.custom-card p {
+  width: 350px;
+  height: 121px;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.link-orange {
+  font-size: 15px;
+  line-height: 36px;
+  color: #f5812c;
+}
+
+.link-orange:hover {
+  color: #b96021;
+}
+
+.btn-orange {
+  width: 287px;
+  height: 45px;
+  font-size: 20px;
+  line-height: 33px;
+  font-weight: 500;
+  border-radius: 22px;
+  background-color: #f5812c;
+  margin: 100px auto 0 auto;
+  color: #fff;
+  display: block;
+}
+
+/* Footer */
+footer .col {
+  padding: 20px 20px;
+}
+
+footer .col-first img {
+  margin-top: 10px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a,
+footer a:hover {
+  color: #757575;
+}
+
+footer .top {
+  border-top: 2px solid #264426;
+  padding-top: 60px;
+}
+
+footer .bottom {
+  text-align: center;
+  border-top: 1px solid #e1e1e1;
+  padding-top: 20px;
+}
+
+footer .bottom p {
+  min-height: 50px;
+  line-height: 50px;
+}
+.btn-orange:hover {
+  background-color: #b96021;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+
+/*  Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #hero .container {
+    min-height: 400px;
+    text-align: start;
+    align-items: flex-start;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #na-midia .title-wrapper {
+    height: 75px;
+  }
+  footer .bottom {
+    text-align: inherit;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
